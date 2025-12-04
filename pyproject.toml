@@ -1,0 +1,55 @@
+[project]
+name = "advent-of-code"
+version = "0.1.0"
+description = ""
+authors = [
+    {name = "Shengyun (Gordon) Gao",email = "gordongao1210@gmail.com"}
+]
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+    "numpy (>=2.3.5,<3.0.0)"
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+[dependency-groups]
+dev = [
+    "pre-commit (>=4.5.0,<5.0.0)",
+    "black (>=25.11.0,<26.0.0)",
+    "isort (>=7.0.0,<8.0.0)",
+    "ruff (>=0.14.7,<0.15.0)",
+    "pydoclint (>=0.8.3,<0.9.0)"
+]
+
+[tool.black]
+line-length = 88
+
+[tool.isort]
+profile = "black"
+line_length = 88
+
+[tool.ruff]
+line-length = 88
+lint.select = ["E4", "E7", "E9", "F"]
+lint.ignore = ["E712"]
+lint.fixable = ["ALL"]
+lint.unfixable = []
+lint.exclude = [
+    ".git",
+    "ruff_cache",
+    "venv",
+    ".venv",
+    "__pypackages__",
+    "build",
+    "dist",
+    "notebooks",
+]
+lint.per-file-ignores = {}
+
+[tool.pydoclint]
+style = "numpy"
+check-return-types = false
