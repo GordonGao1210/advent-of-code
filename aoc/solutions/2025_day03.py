@@ -12,8 +12,8 @@ class Solution(BaseSolution):
         sol_1 = self.solve_part_1(lines)
         sol_2 = self.solve_part_2(lines)
 
-        print(f"Answer for Part 1: {sol_1}")
-        print(f"Answer for Part 2: {sol_2}")
+        print(f"Solution for 2025 Day 3 Part 1: {sol_1}")
+        print(f"Solution for 2025 Day 3 Part 2: {sol_2}")
 
     def solve_part_1(self, lines: list[str]) -> int:
         sum = 0

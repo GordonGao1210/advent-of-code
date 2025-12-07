@@ -11,8 +11,8 @@ class Solution(BaseSolution):
         sol_1 = self.solve_part_1(content)
         sol_2 = self.solve_part_2(content)
 
-        print(f"Solution for 2025 Day 4 Part 1: {sol_1}")
-        print(f"Solution for 2025 Day 4 Part 2: {sol_2}")
+        print(f"Solution for 2025 Day 5 Part 1: {sol_1}")
+        print(f"Solution for 2025 Day 5 Part 2: {sol_2}")
 
     def solve_part_1(self, content: str) -> int:
         ranges, ids = content.split("\n\n")

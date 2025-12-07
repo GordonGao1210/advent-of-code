@@ -13,8 +13,8 @@ class Solution(BaseSolution):
         sol_1 = self.solve_part_1(range_list)
         sol_2 = self.solve_part_2(range_list)
 
-        print(f"Answer for Part 1: {sol_1}")
-        print(f"Answer for Part 2: {sol_2}")
+        print(f"Solution for 2025 Day 2 Part 1: {sol_1}")
+        print(f"Solution for 2025 Day 2 Part 2: {sol_2}")
 
     def solve_part_1(self, range_list: list[str]) -> int:
         sum = 0
