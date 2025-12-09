@@ -9,8 +9,9 @@ class Solution(BaseSolution):
         content = self.get_input_data()
 
         sol_1 = self.solve_part_1(content)
-        print(f"Solution for 2025 Day 7 Part 1: {sol_1}")
         sol_2 = self.solve_part_2(content)
+
+        print(f"Solution for 2025 Day 7 Part 1: {sol_1}")
         print(f"Solution for 2025 Day 7 Part 2: {sol_2}")
 
     def solve_part_1(self, content: str) -> int:

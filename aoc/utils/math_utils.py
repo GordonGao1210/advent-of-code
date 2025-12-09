@@ -33,3 +33,17 @@ def is_prime(n: int) -> bool:
     if len(factors) > 0:
         return False
     return True
+
+
+def calculate_euclidean_distance(
+    position_1: tuple[int, ...] | list[int], position_2: tuple[int, ...] | list[int]
+) -> float:
+    """
+    Calculate the Euclidean distance between two points in n-dimensional space.
+    """
+    if len(position_1) != len(position_2):
+        raise ValueError("Positions must have the same number of dimensions.")
+    distance = (
+        sum((position_1[i] - position_2[i]) ** 2 for i in range(len(position_1))) ** 0.5
+    )
+    return distance
